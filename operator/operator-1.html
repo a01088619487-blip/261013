@@ -22,9 +22,9 @@
       //  비교연산자(맞는지 확인)
       console.log(5 > 3); //true
       console.log(5 < 3); //false
-      console.log(5 == 3); // false 같다란 표시는'==' 하나만'=' 넣으면 결과값
+      console.log(5 == 3); // false 같다란 표시는'==' 하나만이라도 같으면 결과값에 포함'=' 넣으면 결과값
       console.log(5 === 3); // false 모든 속성이 완전히 같은지 확인하는값
-      console.log(5 != 3); //true false 값
+      console.log(5 != 3); //true false 값만 나온다
       //==,===,!= 이건 자세히 더 알아보기 이해 가 부족함.
 
       //  논리연산자(조건이 여러개일때)
@@ -33,7 +33,11 @@
       console.log(age > 18 || age > 30); //true 하나만 맞아도 true결과 값냄[||:또는 뜻 (\+shift)]
       // ! 반대로 바꾸기
       let islogin = true;
-      console.log(!islogin); // islogin true인걸 false로 바꿈!  앤 대체 언제쓰이는거임??..찾아볼까
+      console.log(!islogin); // islogin true인걸 false로 바꿈!  
+      //로그아웃 상태일때 화면 보여주기 예시+입력창 체크박스 유효성 검사+ 스위치버튼토글박스
+      // 로 쓰인다 정말 많이 쓰이는 실무 패턴임 
+      // !()은 현재 상태를 정반대로 뒤집고 싶을때, ~가 아닌지 확인할때 쓰는 연산자이다.
+      
 
       //  증가/감소 연산자
       let count = 5

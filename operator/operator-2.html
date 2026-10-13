@@ -20,9 +20,9 @@
       let count = 0;
       clickBtn.addEventListener("click", function name(params) {
         // console.log("클릭완료"); 잘뜨는지 확인햇으니 주석으로 바꿔도됨
-        // console.log(count);
+        // console.log(count);   count ++실행전 확인 숫자가 0이 나올거임 
         count++
-        // console.log(count); // 잘 올라가는지 확인 완료 근ㄷ ㅔ 왜두개를 써서 확인한건지 모르겟뉑..
+        // console.log(count); // count ++ 실행후 코드가 지나간 후에 값이 1증가햇는지 확인 잘 올라가는지 확인
         //p태그안에 잇는 카운터 0을 올리게 바꾸야함
         counter.textContent= `클릭횟수 : ${count}` 
         //글자 counter안을 선택이됨 그리고 변수를 넣으면 숫자가  점점올라간다
