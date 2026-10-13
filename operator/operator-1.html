@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연산자</title>
+  </head>
+  <body>
+    <script>
+      // script가 자바를 이용
+      // 계산하거나 비교할 때 쓰는 기호[저번 varoable 3에서 변수 더한 값이고 index는 문자열끼리 연결 연산자]
+
+      //  산술연산자(계산)
+      let a = 10;
+      let b = 3;
+      console.log(a + b); //더하기  13
+      console.log(a - b); //빼기  7
+      console.log(a * b); //곱하기  30
+      console.log(a / b); //나누기   3.333333333
+      console.log(a % b); //나머지 값 1
+
+      //  비교연산자(맞는지 확인)
+      console.log(5 > 3); //true
+      console.log(5 < 3); //false
+      console.log(5 == 3); // false 같다란 표시는'==' 하나만'=' 넣으면 결과값
+      console.log(5 === 3); // false 모든 속성이 완전히 같은지 확인하는값
+      console.log(5 != 3); //true 부정 값?
+      //==,===,!= 이건 자세히 더 알아보기 이해 가 부족함.
+
+      //  논리연산자(조건이 여러개일때)
+      let age = 20;
+      console.log(age > 18 && age < 30); //true 둘다 같아야지 true라고 결과값냄[&&:그리고 라는 뜻]
+      console.log(age > 18 || age > 30); //true 하나만 맞아도 true결과 값냄[||:또는 뜻 (\+shift)]
+      // ! 반대로 바꾸기
+      let islogin = true;
+      console.log(!islogin); // islogin true인걸 false로 바꿈!  앤 대체 언제쓰이는거임??..찾아볼까
+
+      //  증가/감소 연산자
+      let count = 5
+      count++  //[++는  증가]
+      console.log(count); //6
+      count-- //[--는 감소]
+      console.log(count); //5  (위에서 증가를 햇기때문에 6에대한 감소를 시행함 ++르 지우면 결과값4가 나옴)
+      
+      
+      
+    </script>
+  </body>
+</html>
