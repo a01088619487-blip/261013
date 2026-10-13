@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문 사용예제</title>
+  </head>
+  <body>
+    <script>
+      //로그인 체크
+      let isLogin = false;
+      if (isLogin) {
+        console.log("로그인 상태");
+      } else {
+        console.log("로그인 해주세요.");
+      } //로그인 한 상태가 아니면 로그인하라는 창이 뜨고 로그인 한 상태이면 다른창으로 넘어갈수잇게 도와주는 조건문
+      //이걸로 통해서 로그인이 먼저 할수잇게?
+
+      //입력값 검사
+      let input = "";
+      if (input === "") {
+        console.log("값을 입력하세요!");
+      }
+
+      //쇼핑몰 할인계산
+      let price = 12000;
+      if (price >= 10000) {
+        console.log("할인적용");
+      }
+
+      // 모바일 / pc구분
+      let isMobile = false;
+      if (isMobile) {
+        console.log("모바일 화면");
+      }else{
+        console.log("PC화면");
+        
+      }
+    </script>
+  </body>
+</html>

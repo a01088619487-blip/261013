@@ -7,14 +7,29 @@
   </head>
   <body>
     <button id="btn">클릭 +</button>
-    <p class="conter">클릭횟수 : 0</p> 
+    <p class="counter">클릭횟수 : 0</p>
     <!-- 클릭이라는 이벤트 조직을 만들어야함 -->
-     <script>
-        // document: 안에  querySelector:요소를 선택해라![선택자] 
-        let clickBtn = document.querySelector("#btn") 
-        console.log(clickBtn); //Console 에 담아져잇는지 확인 가능~[F12]
+    <script>
+      // document: 안에  querySelector:요소를 선택해라![선택자]
+      let clickBtn = document.querySelector("#btn");
+      console.log(clickBtn); //Console 에 담아져잇는지 확인 가능~[F12]
+      //클릭횟수 담기
+      let counter = document.querySelector(".counter");
+      console.log(counter);
+      //0을 기본디폴트로 담을거임
+      let count = 0;
+      clickBtn.addEventListener("click", function name(params) {
+        // console.log("클릭완료"); 잘뜨는지 확인햇으니 주석으로 바꿔도됨
+        // console.log(count);
+        count++
+        // console.log(count); // 잘 올라가는지 확인 완료 근ㄷ ㅔ 왜두개를 써서 확인한건지 모르겟뉑..
+        //p태그안에 잇는 카운터 0을 올리게 바꾸야함
+        counter.textContent= `클릭횟수 : ${count}` 
+        //글자 counter안을 선택이됨 그리고 변수를 넣으면 숫자가  점점올라간다
+        // `` 벡티 제발... 기억해라 ㅠㅠㅠ "" 이거 아니다 `` [~ 자리에 잇는 벡틱이다!!!]
         
-        
-     </script>
+
+      }); //이벤트명[문법] 클릭이벤트명에 ,function  안에 기능을 넣어라 무엇을 함수를!
+    </script>
   </body>
 </html>
